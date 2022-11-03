@@ -1,0 +1,78 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+html {
+  /* font-size: 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+
+  /* font-size: 62.5%; */
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  /* line-height: 1; */
+  font-weight: 400;
+  color: #2c2929;
+  background-color: antiquewhite;
+
+  /* Center demo content on the screen */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/**************************/
+/* GENRAL REUSABLE COMPONENTS */
+/**************************/
+
+/* Demo section */
+
+/* section {
+  padding: 5em 0;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+} */
+
+.container {
+  /* 1140px */
+  /* max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto; */
+
+  /* Demo style */
+  padding: 0 2em;
+  max-width: 90rem;
+}
