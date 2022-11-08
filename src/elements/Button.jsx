@@ -1,18 +1,22 @@
 import React from 'react';
-import '../styles/buttons.css';
+import styled from 'styled-components';
 
-const Button = () => {
-  return (
-    <div>
-      <a href='' class className='btn btn--full'>
-        Full
-      </a>
+export const Button = styled.button`
+  background: #645cff;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  padding: 0.25rem;
+  display: block;
+  width: 200px;
+  margin: 1rem auto;
+`;
 
-      <a href='' className='btn btn--outline'>
-        Outline
-      </a>
-    </div>
-  );
-};
-
-export default Button;
+export const RedButton = styled(Button)`
+  width: 400px;
+  background: transparent;
+  color: red;
+  border: 1px solid;
+`;

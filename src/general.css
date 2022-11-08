@@ -19,13 +19,13 @@ html {
   /* font-size: 10px / 16px = 0.625 = 62.5% */
   /* Percentage of user's browser font-size setting */
 
-  /* font-size: 62.5%; */
+  font-size: 62.5%;
   overflow-x: hidden;
 }
 
 body {
   font-family: 'Lato', sans-serif;
-  /* line-height: 1; */
+  line-height: 1;
   font-weight: 400;
   color: #2c2929;
   background-color: antiquewhite;
@@ -53,32 +53,33 @@ select {
 /* GENRAL REUSABLE COMPONENTS */
 /**************************/
 
-/* Demo section */
-
-/* section {
-  padding: 5em 0;
-  display: flex;
-  justify-items: center;
-  align-items: center;
-} */
-
 .container {
   /* 1140px */
-  /* max-width: 120rem;
+  max-width: 120rem;
   padding: 0 3.2rem;
-  margin: 0 auto; */
+  margin: 0 auto;
 
   /* Demo style */
-  padding: 0 2em;
-  max-width: 90rem;
+  /* padding: 0 2em;
+  max-width: 90rem; */
 }
 
-.container-two {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 0 1rem;
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 
-.component-gap {
-  padding: 5rem 0;
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
 }
